@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "treinamento-angular"
+    }
+  },
+  "defaultProject": "treinamento-angular",
+  "cli": {
+    "analytics": false
+  }
 }
