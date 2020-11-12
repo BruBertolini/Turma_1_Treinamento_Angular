@@ -20,8 +20,8 @@ export class HelloWorldComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeType(){
-    this.inputType = "number"
+  executeAction(){
+    // fazer algo
   }
 
 }
