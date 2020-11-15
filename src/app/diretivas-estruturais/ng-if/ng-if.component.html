@@ -1,0 +1,19 @@
+<div>
+    <div><span>Diretiva NgIf</span></div>
+    <div *ngIf="condicao">Primeira DIV: condicao == true</div>
+    <div *ngIf="!condicao">Segunda DIV: condicao == false</div>
+    <div>
+      <button (click)="condicao = !condicao">
+        Mudar Valor para {{ !condicao }}
+      </button>
+    </div>
+  </div>
+  
+  <hr />
+  
+  <div>
+    <div><span>Diferença entre NgIf e Hidden e Display None</span></div>
+    <div *ngIf="false">NgIf</div>
+    <div [style.display]="true ? 'none' : 'block'">Display None</div>
+    <div hidden>Hidden</div>
+  </div>

@@ -1,0 +1,24 @@
+<div>
+  <div><span>Diretiva NgIf</span></div>
+  <div>
+    <p>Selecione uma fruta:</p>
+    <input type="radio" name="fruta" value="maca" [(ngModel)]="fruta" />
+    <label for="male">Maça</label><br />
+    <input type="radio" name="fruta" value="banana" [(ngModel)]="fruta" />
+    <label for="female">Banana</label><br />
+    <input type="radio" name="fruta" value="laranja" [(ngModel)]="fruta" />
+    <label for="other">Laranja</label><br />
+    <input type="radio" name="fruta" value="outra" [(ngModel)]="fruta" />
+    <label for="other">Outra</label>
+  </div>
+
+  <div class="frutas-selecionadas">
+    <span> Fruta Selecionada: {{ fruta }}</span>
+    <div [ngSwitch]="fruta">
+      <img *ngSwitchCase="'maca'" src="/assets/img/apple.jpg" />
+      <img *ngSwitchCase="'banana'" src="/assets/img/banana.jpg" />
+      <img *ngSwitchCase="'laranja'" src="/assets/img/orange.jpg" />
+      <img *ngSwitchDefault src="/assets/img/fruits.jpg" />
+    </div>
+  </div>
+</div>

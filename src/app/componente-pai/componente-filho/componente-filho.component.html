@@ -1,5 +1,10 @@
 <section>
   <span>Esse é o componente FILHO</span>
   <div>O componente PAI passou esse valor: {{ valor }}</div>
-  <button (click)="adicionarValor()" >Valor +1</button>
+  <button
+  [ngStyle]="{
+    'font-style': valor > 5 ? 'italic' : 'normal',
+    'font-weight': valor > 8 ? 'bold' : 'normal'
+  }"
+  (click)="adicionarValor()" >Valor +1</button>
 </section>
