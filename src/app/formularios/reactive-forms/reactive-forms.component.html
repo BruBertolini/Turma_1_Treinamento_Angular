@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="salvar()">
+  <div>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" formControlName="nome" required />
+  </div>
+  <div>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" formControlName="email" required />
+  </div>
+  <div>
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" formControlName="idade" required />
+  </div>
+  <div>
+    <button type="submit" [disabled]="form.invalid">Salvar</button>
+  </div>
+</form>

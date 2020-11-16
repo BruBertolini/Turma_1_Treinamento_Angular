@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ComponenteFilhoComponent } from './componente-pai/componente-filho/componente-filho.component';
 import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
 import { DiretivasEstruturaisModule } from './diretivas-estruturais/diretivas-estruturais.module';
+import { FormulariosModule } from './formularios/formularios.module';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { ContaComponent } from './lista-contas/conta/conta.component';
 import { ListaContasComponent } from './lista-contas/lista-contas.component';
@@ -29,7 +30,8 @@ const routes = [
     BrowserModule,
     FormsModule,
     DiretivasEstruturaisModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormulariosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
