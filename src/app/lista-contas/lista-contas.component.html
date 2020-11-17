@@ -1,20 +1,16 @@
 <div>
-  <span>Valor do Pai: {{ valorContaUm }}</span>
+  <span [ngStyle]="{
+    'background-color': valorContaUm > 100 ? 'green': '',
+    'color': valorContaUm < 0 ? 'red': 'black'
+  
+  }" >Valor do Pai: {{ valorContaUm }}</span>
   <br />
-  <app-conta
-    [(valorConta)]="valorContaUm"
-  ></app-conta>
+  <app-conta [(valorConta)]="valorContaUm"></app-conta>
 </div>
 
 <br />
 <div>
   <span>Valor do Pai: {{ valorContaDois }}</span>
   <br />
-  <app-conta
-    [(valorConta)]="valorContaDois"
-  ></app-conta
-  >>
+  <app-conta [(valorConta)]="valorContaDois"></app-conta>
 </div>
-
-
-

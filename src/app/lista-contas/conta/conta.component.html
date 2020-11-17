@@ -1,5 +1,11 @@
-<span>Valor da conta é : {{ valorConta }}</span>
+<span
+  [ngClass]="{
+    'maior-que-cem': valorConta > 100,
+    'negativos': valorConta < 0
+  }"
+  >Valor da conta é : {{ valorConta }}</span
+>
 <div>
-    <button (click)="add()" >+10</button>
-    <button (click)="remover()" >-10</button>
+  <button (click)="add()">+10</button>
+  <button (click)="remover()">-10</button>
 </div>

@@ -18,6 +18,6 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
     CommonModule,
     FormsModule,
     DiretivasEstruturaisRoutingModule,
-  ],
+  ]
 })
 export class DiretivasEstruturaisModule {}

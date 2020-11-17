@@ -12,7 +12,7 @@ import { ContaComponent } from './lista-contas/conta/conta.component';
 import { ListaContasComponent } from './lista-contas/lista-contas.component';
 
 const routes = [
-  { path:'hello-word', component: HelloWorldComponent },
+  { path:'', component: HelloWorldComponent },
   { path:'data-binding', component: ComponentePaiComponent },
   { path:'data-binding-lista', component: ListaContasComponent },
 ]

@@ -10,6 +10,8 @@
     <label for="other">Laranja</label><br />
     <input type="radio" name="fruta" value="outra" [(ngModel)]="fruta" />
     <label for="other">Outra</label>
+    <input type="radio" name="fruta" [value]="10" [(ngModel)]="fruta" />
+    <label for="other">10</label>
   </div>
 
   <div class="frutas-selecionadas">
@@ -18,6 +20,7 @@
       <img *ngSwitchCase="'maca'" src="/assets/img/apple.jpg" />
       <img *ngSwitchCase="'banana'" src="/assets/img/banana.jpg" />
       <img *ngSwitchCase="'laranja'" src="/assets/img/orange.jpg" />
+      <img *ngSwitchCase="10" src="/assets/img/orange.jpg" />
       <img *ngSwitchDefault src="/assets/img/fruits.jpg" />
     </div>
   </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-diretivas-estruturais',
@@ -8,15 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class DiretivasEstruturaisComponent implements OnInit {
 
 
-
- 
- 
-
-
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  irNgIf(){
+    return '/diretivas-estruturais/ng-if';
+  }
+
+  irParaHome(){
+    this.router.navigate(['']);
   }
 
 }

@@ -1,8 +1,10 @@
 <div>
     <div><span>Diretiva NgFor</span></div>
-    <div *ngFor="let item of lista">
+    <div *ngFor="let item of lista; let i = index">
       <span> Nome: {{ item.nome }} </span>
       -
       <span> Idade: {{ item.idade }} </span>
+      -
+      <span>Index: {{ i }}</span>
     </div>
   </div>

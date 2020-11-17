@@ -1,8 +1,12 @@
 
 <div class="routes">
-    <a routerLink="/diretivas-estruturais/ng-if">NgIf</a>
+    <a [routerLink]="irNgIf()">NgIf</a>
     <a routerLink="/diretivas-estruturais/ng-for">NgFor</a>
     <a routerLink="/diretivas-estruturais/ng-switch">NgSwitch</a>
 </div>
 
-<router-outlet></router-outlet>
+Diretivas Estruturais
+
+<router-outlet></router-outlet> 
+
+<button (click)="irParaHome()" >Ir Para Home</button>

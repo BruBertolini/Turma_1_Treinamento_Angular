@@ -20,6 +20,7 @@ export class ReactiveFormsComponent implements OnInit {
   }
 
   salvar() {
+    console.log(this.form)
     if (this.form.valid) {
       //salvar
       console.log(this.form.getRawValue());
