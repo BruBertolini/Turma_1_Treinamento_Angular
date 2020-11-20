@@ -8,17 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class TemplateDrivenComponent {
 
   model = {
-    nome: null,
-    email: null,
-    idade: null
+    nome: '',
+    email: '',
+    idade: 0
   }
 
   constructor() { }
 
   
   salvar(){
-    console.log(this.model)
     if(this.validar()){
+      console.log(this.model)
       // salvar
     }
   }

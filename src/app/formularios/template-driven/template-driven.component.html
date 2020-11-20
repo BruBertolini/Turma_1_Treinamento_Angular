@@ -1,7 +1,7 @@
 <form (ngSubmit)="salvar()" #formulario="ngForm">
   <div>
     <label for="nome">Nome:</label>
-    <input type="text" name="nome" [(ngModel)]="model.nome" required />
+    <input type="text" name="nome" [(ngModel)]="model.nome" required (blur)="validar()" />
   </div>
   <div>
     <label for="email">E-mail:</label>
@@ -9,7 +9,7 @@
   </div>
   <div>
     <label for="idade">Idade:</label>
-    <input type="number" name="idade" [(ngModel)]="model.idade" required />
+    <input type="number" name="idade" [(ngModel)]="model.idade" (blur)="validar()" required />
   </div>
   <div>
     <button type="submit" [disabled]="formulario.form.invalid">Salvar</button>

@@ -13,7 +13,7 @@ export class ReactiveFormsComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      nome: ['', [Validators.required, Validators.minLength(3)]],
+      nomeDoUsuario: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
       idade: ['', [Validators.required, Validators.min(0)]],
     });
